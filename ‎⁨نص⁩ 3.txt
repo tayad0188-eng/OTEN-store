@@ -1,0 +1,149 @@
+1<!DOCTYPE html>
+2<html lang="ar" dir="rtl">
+3<head>
+4    <meta charset="UTF-8">
+5    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6    <title>OTEN - موقع ملابس</title>
+7    <style>
+8        /* CSS للتصميم */
+9        body {
+10            font-family: Arial, sans-serif;
+11            margin: 0;
+12            padding: 0;
+13            background-color: #f4f4f4;
+14            color: #333;
+15        }
+16        header {
+17            background-color: #333;
+18            color: white;
+19            padding: 20px;
+20            text-align: center;
+21        }
+22        nav {
+23            background-color: #444;
+24            padding: 10px;
+25        }
+26        nav ul {
+27            list-style: none;
+28            padding: 0;
+29            text-align: center;
+30        }
+31        nav ul li {
+32            display: inline;
+33            margin: 0 15px;
+34        }
+35        nav ul li a {
+36            color: white;
+37            text-decoration: none;
+38        }
+39        .container {
+40            max-width: 1200px;
+41            margin: 20px auto;
+42            padding: 20px;
+43            background-color: white;
+44            border-radius: 8px;
+45            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+46        }
+47        .products {
+48            display: flex;
+49            flex-wrap: wrap;
+50            justify-content: space-around;
+51        }
+52        .product {
+53            width: 30%;
+54            margin: 10px;
+55            text-align: center;
+56            border: 1px solid #ddd;
+57            padding: 10px;
+58            border-radius: 8px;
+59        }
+60        .product img {
+61            max-width: 100%;
+62            height: 200px;
+63        }
+64        button {
+65            background-color: #28a745;
+66            color: white;
+67            border: none;
+68            padding: 10px;
+69            cursor: pointer;
+70            border-radius: 5px;
+71        }
+72        button:hover {
+73            background-color: #218838;
+74        }
+75        footer {
+76            background-color: #333;
+77            color: white;
+78            text-align: center;
+79            padding: 10px;
+80            margin-top: 20px;
+81        }
+82    </style>
+83</head>
+84<body>
+85    <header>
+86        <h1>OTEN</h1>
+87        <p>متجر ملابس عصري وأنيق</p>
+88    </header>
+89    
+90    <nav>
+91        <ul>
+92            <li><a href="#home">الرئيسية</a></li>
+93            <li><a href="#shop">المتجر</a></li>
+94            <li><a href="#about">حولنا</a></li>
+95            <li><a href="#contact">اتصل بنا</a></li>
+96        </ul>
+97    </nav>
+98    
+99    <div class="container" id="home">
+100        <h2>مرحباً بك في OTEN</h2>
+101        <p>اكتشف مجموعتنا من الملابس العصرية والمريحة.</p>
+102    </div>
+103    
+104    <div class="container" id="shop">
+105        <h2>منتجاتنا</h2>
+106        <div class="products">
+107            <div class="product">
+108                <img src="https://via.placeholder.com/300x200?text=T-Shirt" alt="تيشرت">
+109                <h3>تيشرت أبيض</h3>
+110                <p>سعر: 50 ريال</p>
+111                <button onclick="addToCart('تيشرت أبيض')">أضف إلى السلة</button>
+112            </div>
+113            <div class="product">
+114                <img src="https://via.placeholder.com/300x200?text=Jeans" alt="جينز">
+115                <h3>جينز أزرق</h3>
+116                <p>سعر: 100 ريال</p>
+117                <button onclick="addToCart('جينز أزرق')">أضف إلى السلة</button>
+118            </div>
+119            <div class="product">
+120                <img src="https://via.placeholder.com/300x200?text=Jacket" alt="جاكيت">
+121                <h3>جاكيت أسود</h3>
+122                <p>سعر: 150 ريال</p>
+123                <button onclick="addToCart('جاكيت أسود')">أضف إلى السلة</button>
+124            </div>
+125        </div>
+126    </div>
+127    
+128    <div class="container" id="about">
+129        <h2>حولنا</h2>
+130        <p>OTEN هو متجر متخصص في الملابس العصرية، نقدم جودة عالية وأسعار مناسبة.</p>
+131    </div>
+132    
+133    <div class="container" id="contact">
+134        <h2>اتصل بنا</h2>
+135        <p>البريد الإلكتروني: info@oten.com</p>
+136        <p>الهاتف: 0123456789</p>
+137    </div>
+138    
+139    <footer>
+140        <p>&copy; 2023 OTEN. جميع الحقوق محفوظة.</p>
+141    </footer>
+142    
+143    <script>
+144        // JavaScript للتفاعل البسيط
+145        function addToCart(product) {
+146            alert('تم إضافة ' + product + ' إلى السلة!');
+147        }
+148    </script>
+149</body>
